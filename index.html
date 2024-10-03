@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="input-container">
+            <input id="todo-input" type="text" placeholder="Add Task">
+            <button id="create-todo-btn">CREATE</button>
+        </div>
+         <div id="boards-Container" clsss="board-container">
+            <div class="board todo-board" id="todo-board">
+                <h3>Todo Bar</h3>
+                <div draggable="true" class="item">
+                     Movable
+                </div> 
+            </div>
+            <div class="board progress-board" id="progress-board">
+                <h3>Progress Bar</h3>
+            </div>
+            <div class="board complete-board" id="complete-board">
+                <h3>Completion Bar</h3>
+            </div>
+         </div>
+    </div>
+    <script src="input.js"></script>
+    <script src="board.js"></script>
+</body>
+</html>
